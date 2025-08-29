@@ -1,35 +1,3 @@
-# Image Caption Generation using Deep Learning
-
-[![GitHub license](https://img.shields.io/github/license/Sajid030/image-caption-generator)](https://github.com/Sajid030/image-caption-generator/blob/master/LICENSE.md)
-[![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white)
-[![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B)](https://www.streamlit.io/)
-
-## Table of Contents
-
-- [Demo](#demo)
-- [Overview](#overview)
-- [About the Dataset](#about-the-dataset)
-- [Installation](#installation)
-- [Deployement on Streamlit](#deployement-on-streamlit)
-- [Directory Tree](#directory-tree)
-- [Bug / Feature Request](#bug--feature-request)
-- [Future Scope](#future-scope)
-
-## Demo
-
-- Link: https://imgcaptiongen.streamlit.app/
-
-`Note:` If the website link provided above is not working, it might mean that the deployment has been stopped or there are technical issues. We apologize for any inconvenience.
-
-- Please consider giving a ⭐ to the repository if you find this app useful.
-- A quick preview of the **Image Caption Generator** app:
-
-![Caption Generator Demo](resource/demo.gif)
-
 ## Overview
 
 This repository contains code for an image caption generation system using deep learning techniques. The system leverages a pretrained VGG16 model for feature extraction and a custom captioning model which was trained using LSTM for generating captions. The model is trained on the Flickr8k dataset using an attention mechanism to improve caption quality.
