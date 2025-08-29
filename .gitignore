@@ -1,0 +1,11 @@
+# Ignore Python virtual environment
+venv/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+
+# Other unnecessary files
+*.pyo
+*.pyd
+*.sqlite3
