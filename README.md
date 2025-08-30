@@ -1,37 +1,44 @@
-## Overview
+# EvoAstra Internship Projects
 
-This repository contains code for an image caption generation system using deep learning techniques. The system leverages a pretrained VGG16 model for feature extraction and a custom captioning model which was trained using LSTM for generating captions. The model is trained on the Flickr8k dataset using an attention mechanism to improve caption quality.
+This repository hosts two exciting projects from my internship journey:
 
-**Note:** While using the `VGG16` model for feature extraction provides accurate results, it's important to be mindful of memory usage. The VGG16 model can consume a significant amount of memory, potentially causing issues in resource-constrained environments. To address this, it's advised to consider using the `MobileNetV2` model for feature extraction. MobileNetV2 strikes a balance between memory efficiency and performance, making it a practical choice for scenarios with limited resources. Consequently, in my deployed app, I've opted for `MobileNetV2`.
+---
 
-The key components of the project include:
+## 1. Used Car Market Analysis (Exploratory Data Analysis)
 
-- Image feature extraction using a pretrained VGG16 model (Consider using MobileNetV2 for memory efficiency)
-- Caption preprocessing and tokenization
-- Custom captioning model architecture with attention mechanism
-- Model training and evaluation
-- Streamlit app for interactive caption generation
+> **Note:** The dataset used for this project is confidential and cannot be shared publicly due to internship rules.
 
-## About the Dataset
+I delved into a used car dataset to uncover patterns and market behaviors using visualizations and statistical insights. Here's what I discovered:
 
-The [Flickr8k dataset](https://www.kaggle.com/adityajn105/flickr8k) is used for training and evaluating the image captioning system. It consists of 8,091 images, each with five captions describing the content of the image. The dataset provides a diverse set of images with multiple captions per image, making it suitable for training caption generation models.
+- **Fuel Type Trends**: Diesel and Petrol cars dominate the listings, while CNG and Electric vehicles lag behind—reflecting the current adoption trends in the used car market.  
+- **Transmission Breakdown**: Manual cars are far more prevalent than automatic ones, suggesting stronger supply or preference in that segment.  
+- **Ownership Insights**: First-owner cars are the most common listings—likely because they’re perceived as better maintained and offer better resale value.  
+- **Price Distribution**: Most cars lie in a mid-price range, with a “long tail” of premium, rare high-priced listings.  
+- **Age vs. Price**: Prediction holds—older cars are cheaper. However, some model years show greater price variations, possibly due to condition or model type.  
+- **Fuel Type & Price**: Diesel cars tend to fetch higher average prices, perhaps due to their efficiency and desirability for long drives.  
+- **Mileage Patterns**: The majority of cars have moderate mileage, with high-mileage models standing out as clear exceptions.  
+- **Geographical Hotspots**: A few cities account for the majority of car listings, indicating regional sales hubs.  
+- **Price Drivers**: Price strongly correlates with year (newer cars cost more) and inversely with kilometers driven—newer, low-mileage cars are pricier.
 
-Download the dataset from [Kaggle](https://www.kaggle.com/adityajn105/flickr8k) and organize the files as follows:
+---
 
-- flickr8k
-  - Images
-    - (image files)
-  - captions.txt
+## 2. Image Captioning Model
 
-## Installation
+Here’s my deep learning project, where I built an image caption generator using a combination of CNNs and LSTM with attention—for real-time caption generation!
 
-This project is written in Python 3.10.12. If you don't have Python installed, you can download it from the [official website](https://www.python.org/downloads/). If you have an older version of Python, you can upgrade it using the pip package manager, which should be already installed if you have Python 2 >=2.7.9 or Python 3 >=3.4 on your system.
-To install the required packages and libraries, you can use pip and the provided requirements.txt file. First, clone this repository to your local machine using the following command:
-```
-https://github.com/Sajid030/image-caption-generator.git
-```
-Once you have cloned the repository, navigate to the project directory and run the following command in your terminal or command prompt:
+### Highlight Features
+
+- **Feature Extractor**: Started with VGG16, but switched to **MobileNetV2** for better memory efficiency in resource-limited environments.
+- **Model Structure**: Includes caption preprocessing, LSTM-based generator, and attention mechanism for context-aware captions.
+- **Dataset Used**: Trained and evaluated on the [Flickr8k dataset](https://www.kaggle.com/adityajn105/flickr8k), which includes 8,091 images each paired with 5 descriptive captions.
+- **Interactive Demo**: Deployed as a Streamlit app, enabling easy, interactive caption generation.
+
+### Installation Steps
+
 ```bash
+# Clone the project
+git clone https://github.com/DEEP-222-N/EvoAstra_Internship.git
+cd EvoAstra_Internship
+
+# Install dependencies
 pip install -r requirements.txt
-```
-This will install all the necessary packages and libraries needed to run the project.
