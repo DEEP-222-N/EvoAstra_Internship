@@ -31,7 +31,7 @@ Here’s my deep learning project, where I built an image caption generator usin
 - **Feature Extractor**: Started with VGG16, but switched to **MobileNetV2** for better memory efficiency in resource-limited environments.
 - **Model Structure**: Includes caption preprocessing, LSTM-based generator, and attention mechanism for context-aware captions.
 - **Dataset Used**: Trained and evaluated on the [Flickr8k dataset](https://www.kaggle.com/adityajn105/flickr8k), which includes 8,091 images each paired with 5 descriptive captions.
-- **Interactive Demo**: Deployed as a Streamlit app, enabling easy, interactive caption generation.[DEMO](evoastrainternship-img.streamlit.app/)
+- **Interactive Demo**: Deployed as a Streamlit app, enabling easy, interactive caption generation. [Live Demo](https://evoastrainternship-img.streamlit.app/)
 
 ### Installation Steps
 
