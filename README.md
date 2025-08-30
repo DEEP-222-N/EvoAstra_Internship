@@ -8,6 +8,9 @@ This repository hosts two exciting projects from my internship journey:
 
 > **Note:** The dataset used for this project is confidential and cannot be shared publicly due to internship rules.
 
+
+[Colab File](https://colab.research.google.com/drive/1W2JLlWkO3fHUDcmNKTLheRAhfZNIMqk-?usp=sharing)
+
 I delved into a used car dataset to uncover patterns and market behaviors using visualizations and statistical insights. Here's what I discovered:
 
 - **Fuel Type Trends**: Diesel and Petrol cars dominate the listings, while CNG and Electric vehicles lag behind—reflecting the current adoption trends in the used car market.  
